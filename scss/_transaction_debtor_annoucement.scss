@@ -1,0 +1,101 @@
+.transaction_debtor_annoucement {
+    margin-top: em(35px);
+
+    .transaction_debtor_annoucement__body {
+        display: flex;
+        justify-content: space-between;
+
+        .recent_transaction,
+        .debtor_announcement {
+            padding: 15px 15px;
+        }
+
+    }
+    .debtor_announcements {
+        width: 40%;
+    }
+    .recent_transactions {
+        width: 58%;
+    }
+    .debtor_announcement_container,
+    .recent_transaction_container {
+        padding: 10px 8px;
+    }
+    .debtor_announcement {
+        overflow-y: scroll;
+        height: 250px;
+    }
+    .recent_transaction {
+        overflow-y: scroll;
+        height: 580px;
+    }
+    .debtors {
+        margin-bottom: 35px;
+    }
+
+    .announcement {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(189, 189, 189, 0.25);
+
+        .header_title {
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+    }
+    a.more {
+        display: flex;
+        margin-top: em(20px);
+    }
+    .recent_transaction--mobile {
+        .transaction .price {
+            font-size: em(12px);
+        }
+        .transaction .description {
+            font-size: em(18px);
+            font-weight: bold;
+            text-transform: lowercase;
+        }
+        .content .date {
+            color: #333333;
+            font-size: em(12px);
+        }
+    }
+
+    .debtors--mobile {
+        margin-top: em(35px);
+
+        .btn {
+            font-size: em(14px);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .performace {
+                width: 80%;
+            }
+            .btn {
+                width: 20%;
+            }
+        }
+
+        .mobile-table.debtors {
+            margin-bottom: 10px;
+
+            .content {
+                color: $deep-blue;
+            }
+        }
+    }
+
+    .announcement--mobile {
+        margin-top: em(35px);
+        
+        .announcement {
+            border: none;
+            margin-bottom: 15px;
+            padding: 15px 15px;
+        }
+    }
+}

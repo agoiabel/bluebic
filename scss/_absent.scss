@@ -1,0 +1,92 @@
+.absents {
+	
+	margin-top: em(15px);
+
+	.summary {	
+		display: flex;
+		align-items: center;		
+		padding: 25px 25px;
+		justify-content: space-between;		
+	}
+	.student-attendance {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.report_percentage,
+	.growth {
+		width: 50%;
+	}
+
+	.report_percentage {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.percentage {
+			font-weight: bold;
+			font-size: em(30px);
+			margin-bottom: em(10px);
+		}
+		.student_report {
+			font-size: em(10px);
+		}
+	}
+
+	.absent_report a.more {
+		display: flex;
+		margin-top: em(20px);
+	}
+
+	@media (min-width: 1000px) {
+		.absents__body {
+			display: flex;
+			justify-content: space-between;
+		}
+		.details {
+			width: 68%;
+			padding: em(15px) em(15px);
+			position: relative;
+		}	
+		.summary {
+			width: 30%;
+
+			display: flex;
+			flex-wrap: wrap;
+			padding: 25px 25px;
+			justify-content: space-between;
+		}
+		.student-attendance {
+			width: 100%;
+			min-width: 100%;
+		}
+		.first.student-attendance { 
+			margin-bottom: em(45px);
+		}
+		.report_percentage,
+		.growth {
+			width: 100% !important;
+			text-align: center;
+		}
+
+		.app-table td,
+		.app-table th {
+			font-size: em(14px);
+			line-height: 2.5 !important;
+		}
+		.app-table th {
+			font-weight: bold;
+		}
+		.app-table a {
+			font-weight: bold;
+		}
+		.fab {
+			position: absolute;
+			right: 0;
+			bottom: -30px;
+			background: $deep-blue;
+			padding: 10px 10px;
+			border-radius: 50%; 
+		}
+	}
+}

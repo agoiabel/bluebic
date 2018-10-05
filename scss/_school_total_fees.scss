@@ -1,0 +1,58 @@
+.school_total_fees {
+    margin-top: em(15px);
+    margin-bottom: em(25px);
+}
+.total_fees__body {
+
+    // display: flex;
+    // justify-content: space-between;
+}
+.total_fee {
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    margin-bottom: em(15px);
+    display: flex;
+
+    .icon {
+        border-radius: 4.71px;
+        padding: 15px;
+    }
+    .summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: auto;
+
+        .title {
+            text-transform: uppercase;
+            color: #BDBDBD;
+
+            margin-bottom: 15px;
+        }
+        .amount {
+            font-size: 24px;
+            color: #2D74DA;
+            font-family: Lato;
+        }
+    }
+}
+.total_fee.invoiced .icon {    
+    background: #2D74DA;
+}
+.total_fee.recieved .icon {    
+    background: #17BF5F;
+    padding-right: 10px;
+}
+.total_fee.pending .icon {    
+    background: #FAD961;
+    padding-left: 25px;
+}
+@media (min-width: 1000px) {
+    .total_fees__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    .total_fee {
+        width: 32%;
+    }
+}

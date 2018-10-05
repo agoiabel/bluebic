@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+    <title>Bluebic</title>
+</head>
+
+<body>
+    <nav class="mobile-nav hide hidden-md" id="mobileMenu">
+        
+        <div class="mobile-nav__head">
+            <div class="profile">
+                <div class="image">
+                    <img src="./images/profile_user.png" alt="">
+                </div>
+                <div class="name_email">
+                    <div class="name">Ukauwa David</div>
+                    <div class="email">dukauwa.du@gmail.com</div>
+                </div>
+            </div>
+            <div class="close_menu" onclick="closeMobileMenu()">
+                <img src="./images/close.png" alt="">
+            </div>
+        </div>
+
+        <ul class="nav_items">
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/dashboard.png" class="dashboard nav_item--icon" /> Dashboard
+                </a>
+            </li>
+            
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/student.png" class="student nav_item--icon" /> Students
+                </a>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/employee.png" class="employee nav_item--icon" /> Employees
+                </a>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/guardian.png" class="guardian nav_item--icon" /> Guardians
+                </a>
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/attendance.png" class="attendance nav_item--icon" /> Attendance
+                </a>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/finance.png" class="finance nav_item--icon" /> Finance
+                </a>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/subject.png" class="subject nav_item--icon" /> Subjects
+                </a>
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/batch.png" class="batch nav_item--icon" /> Batches
+                </a>
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/report_card.png" class="report_card nav_item--icon" /> Report Cards
+                </a>
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/sms.png" class="sms nav_item--icon" /> SMS
+                </a>
+            </li>
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/event.png" class="event nav_item--icon" /> Events
+                </a>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </li>
+
+
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/guardian.png" class="guardian nav_item--icon" /> Guardians
+                </a>
+            </li>
+            
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/attendance.png" class="attendance nav_item--icon" /> Attendance
+                </a>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            
+            </li>
+            
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/finance.png" class="finance nav_item--icon" /> Finance
+                </a>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            
+            </li>
+            
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/subject.png" class="subject nav_item--icon" /> Subjects
+                </a>
+            </li>
+            
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/batch.png" class="batch nav_item--icon" /> Batches
+                </a>
+            </li>
+            
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/report_card.png" class="report_card nav_item--icon" /> Report Cards
+                </a>
+            </li>
+            
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/sms.png" class="sms nav_item--icon" /> SMS
+                </a>
+            </li>
+            
+            <li class="nav_item">
+                <a class="nav_item--name">
+                    <img src="./images/event.png" class="event nav_item--icon" /> Events
+                </a>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </li>
+        </ul>
+
+        <div class="help_terms_setting_nav">
+            <div class="setting">Settings</div>
+
+            <div class="help_term_privacy">
+                <div class="help">
+                    <img src="./images/question.png" alt=""> Help
+                </div>
+                <div class="term_privacy">Terms. Privacy</div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <header class="top_header">
+        <section class="logo-container">
+            <div class="logo-item name_and_image">
+                <img src="/images/logo.png" alt="logo" class="logo">
+                <span class="name">Handmaid's International</span>
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" onclick="openWebSchoolProfile()"></span>
+            </div>
+
+            <div class="logo-item menu" onclick="openMobileMenu()">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                <span class="title">Menu</span>
+            </div>
+        </section>   
+        
+        <section class="search_bar_user_profile_notification">
+            
+            <div class="search_bar">
+                <span class="fa fa-search"></span>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="user_profile_notification">
+                <div class="notification">
+                    <img src="./images/not.png" alt="">
+                    <span class="dot"></span>
+                </div>
+                <div class="profile_settings">
+                    <div class="user_profile">
+                        <div class="name_email">
+                            <div class="name">Ukauwa David</div>
+                            <div class="email">dukauwa.du@gmail.com</div>
+                        </div>
+                        <div class="profile_picture_more">
+                            <div class="profile"><img src="./images/user.png" alt=""></div>
+                            <i class="glyphicon glyphicon-triangle-bottom" onclick="toogleSetting()"></i>
+                        </div>
+                    </div>
+
+                    <ul class="settings hide card" id="settings">
+                        <li class="setting setting_profile">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> Profile Settings
+                        </li>
+                        <li class="setting logout">
+                            <button class="btn">
+                                <span class="glyphicon glyphicon-log-out"></span> Logout
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <section class="site_body wrapper">
+
+        <div class="school_profile hide card" id="school_profile--web" >
+            <div class="school_profile--header">
+                <div class="school_profile--name">
+                    <img src="./images/flower.png" alt=""><span>Your Bluebic Account</span>
+                </div>
+                <img src="./images/profile_close.png" alt="" onclick="closeWebSchoolProfile()">
+            </div> 
+            <div class="chosen_school">
+                <button class="btn">Handmaid's International <i class="fa fa-check"></i></button>
+            </div>
+            <div class="school_profile--body">
+                <ul class="other_school">
+                    <li class="other_school--name">Holy Infant College</li>
+                    <li class="other_school--name">Great Delight Schools</li>     
+                </ul>
+
+                <a class="more">
+                    <i class="fa fa-plus"></i> Add a New School
+                </a>
+            </div>
+            <div class="school_owner_profile">
+                <div class="sign_in">You are signed in as <span class="school_owner_profile--email">dukauwa.du@gmail.com</span></div>
+            </div>
+
+            <ul class="school_profile--setting_logout">
+                <li class="school_profile--setting">
+                    <i class="fa fa-user-o" aria-hidden="true"></i> Profile Settings
+                </li>
+                <li class="school_profile--setting setting_logout">
+                    <i class="glyphicon glyphicon-log-out"></i> Logout
+                </li>
+            </ul>
+        </div>
+
+        <aside class="sidebar">
+            <ul class="nav_items">
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/dashboard.png" class="dashboard nav_item--icon" /> Dashboard
+                    </a>
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/student.png" class="student nav_item--icon" /> Students
+                    </a>
+                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/employee.png" class="employee nav_item--icon" /> Employees
+                    </a>
+                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/guardian.png" class="guardian nav_item--icon" /> Guardians
+                    </a>
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/attendance.png" class="attendance nav_item--icon" /> Attendance
+                    </a>
+                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/finance.png" class="finance nav_item--icon" /> Finance
+                    </a>
+                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/subject.png" class="subject nav_item--icon" /> Subjects
+                    </a>
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/batch.png" class="batch nav_item--icon" /> Batches
+                    </a>
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/report_card.png" class="report_card nav_item--icon" /> Report Cards
+                    </a>
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/sms.png" class="sms nav_item--icon" /> SMS
+                    </a>
+                </li>
+            
+                <li class="nav_item">
+                    <a class="nav_item--name">
+                        <img src="./images/event.png" class="event nav_item--icon" /> Events
+                    </a>
+                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                </li>
+            
+            
+
+            </ul>
+
+            <div class="help_terms_setting_nav">
+                <div class="setting">Settings</div>
+            
+                <div class="help_term_privacy">
+                    <div class="help">
+                        <img src="./images/question.png" alt=""> Help
+                    </div>
+                    <div class="term_privacy">Terms. Privacy</div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="content">
+
+            <section class="school_total_fees">
+                <div class="">
+                    <div class="total_fees">
+            
+                        <div class="header">
+                            <img src="./images/fees.png" /> student fees
+                        </div>
+            
+                        <div class="total_fees__body">
+                            <div class="total_fee card invoiced card">
+                                <div class="summary">
+                                    <div class="title">invoiced</div>
+                                    <div class="amount">&#8358;2,300,000.00</div>
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/approve-invoice.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="total_fee recieved card">
+                                <div class="summary">
+                                    <div class="title">invoiced</div>
+                                    <div class="amount">&#8358;1,700,000.00</div>
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/recieved-invoice.png" alt="">
+                                </div>
+                            </div>
+    
+                            <div class="total_fee pending card">
+                                <div class="summary">
+                                    <div class="title">pending</div>
+                                    <div class="amount">&#8358;600,000.00</div>
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/pending-invoice.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>     
+
+            <section class="general_statistics">
+                <div class="graph">
+                    <div class="header clearfix">
+                        <div class="performace pull-left">
+                            <img src="./images/analysis.png" /> student performance
+                        </div>
+                        <a class="more pull-right" href="#">view reports</a>
+                    </div>
+
+                    <canvas class="body card" id="myChart"></canvas>
+                </div>
+
+                <div class="statistics">
+                    <div class="header">
+                        <img src="./images/fees.png" /> general statistics
+                    </div>
+        
+                    <div class="statistics__body">        
+                        <div class="student report card">
+                            <div class="summary">
+                                <div class="title">students</div>
+                                <div class="amount">50,000</div>
+                                <a class="more">view report</a>
+                            </div>
+                            <div class="success growth">
+                                <div class="result">
+                                    <span class="amount">+4</span>
+                                    <span class="glyphicon glyphicon-arrow-up"></span>                                                
+                                </div>
+                                <img src="./images/upward_arrow.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="parent report card">
+                            <div class="summary">
+                                <div class="title">parents</div>
+                                <div class="amount">15, 000</div>
+                                <a class="more">view list</a>
+                            </div>
+                            <div class="success growth">
+                                <div class="result">
+                                    <span class="amount">+13</span>
+                                    <span class="glyphicon glyphicon-arrow-up"></span>                                                
+                                </div>
+                                <img src="./images/medium_growth.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="teacher report card">
+                            <div class="summary">
+                                <div class="title">teachers</div>
+                                <div class="amount">5, 000</div>
+                                <a class="more">view list</a>
+                            </div>
+                            <div class="failed growth">
+                                <div class="result">
+                                    <span class="amount">-12</span>
+                                    <span class="glyphicon glyphicon-arrow-down"></span>                                                
+                                </div>
+                                <img src="./images/downward_growth.svg" alt="">
+                            </div>
+                        </div>                                            
+                    </div>
+                </div>
+            </section>
+    
+            <section class="absents">
+                <div class="header">
+                    <img src="./images/man-user.png" /> absent students
+                </div>
+
+                <div class="absents__body">
+
+                    <div class="summary card">
+                        <div class="first student-attendance">
+                            <div class="report_percentage">
+                                <div class="percentage">94.6%</div>
+                                <div class="student_report">Student Attendance</div>
+                            </div>
+                            <div class="success growth">
+                                <div class="result">
+                                    <span class="amount">+4</span>
+                                    <span class="glyphicon glyphicon-arrow-up"></span>                                                
+                                </div>
+                                <img src="./images/medium_growth.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="student-attendance">
+                            <div class="report_percentage">
+                                <div class="percentage">6</div>
+                                <div class="student_report">No of Students Absent</div>
+                            </div>
+                            <div class="failed growth">
+                                <div class="result">
+                                    <span class="amount">-12</span>
+                                    <span class="glyphicon glyphicon-arrow-down"></span>                                                
+                                </div>
+                                <img src="./images/downward_growth.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details card hidden-xs hidden-sm">
+                        <table class="table app-table">
+                            <thead>
+                                <tr>
+                                    <th>NAME</th>
+                                    <th>CLASS</th>
+                                    <th>NUMBER OF DAYS ABSENT</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Salihu, Attah Chigboza</td>
+                                    <td>JSS1 Hapiness</td>
+                                    <td>3</td>
+                                    <td><a href="#">VIEW CONTACT INFORMATION</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Salihu, Attah Chigboza</td>
+                                    <td>JSS1 Hapiness</td>
+                                    <td>3</td>
+                                    <td><a href="#">VIEW CONTACT INFORMATION</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Salihu, Attah Chigboza</td>
+                                    <td>JSS1 Hapiness</td>
+                                    <td>3</td>
+                                    <td><a href="#">VIEW CONTACT INFORMATION</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        
+                        <img src="./images/subtract.png" alt="" class="fab">
+
+                    </div>
+
+                    <div class="absent_report hidden-md">
+                        <div class="mobile-table absent card">
+                            <div class="header">
+                                <div class="title">Salihu, Attah Chigboza</div>
+                                <div class="sub-title">JSS1 Hapiness</div>
+                            </div>
+                            <div class="v1"></div>
+                            <div class="content">
+                                <div class="title">3 Days Absent</div>
+                                <a class="more">CONTACT</a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-table absent card">
+                            <div class="header">
+                                <div class="title">Salihu, Attah Chigboza</div>
+                                <div class="sub-title">JSS1 Hapiness</div>
+                            </div>
+                            <div class="v1"></div>
+                            <div class="content">
+                                <div class="title">3 Days Absent</div>
+                                <a class="more">CONTACT</a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-table absent card">
+                            <div class="header">
+                                <div class="title">Salihu, Attah Chigboza</div>
+                                <div class="sub-title">JSS1 Hapiness</div>
+                            </div>
+                            <div class="v1"></div>
+                            <div class="content">
+                                <div class="title">3 Days Absent</div>
+                                <a class="more">CONTACT</a>
+                            </div>
+                        </div>
+
+                        <a href="" class="more">VIEW ALL</a>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="transaction_debtor_annoucement">
+
+                <div class="transaction_debtor_annoucement__body">
+                    <div class="debtor_announcements hidden-xs hidden-sm">
+                        <div class="debtors">
+                            <div class="header">
+                                <img src="./images/debt.png" /> debtors
+                            </div>
+                            
+                            <div class="debtor_announcement_container card">
+                                <div class="debtor_announcement">
+                                    <table class="table app-table">
+                                        <thead>
+                                            <tr>
+                                                <th>CLASS</th>
+                                                <th>STUDENT NO</th>
+                                                <th>AMOUNT</th>
+                                                <th><button class="btn">REMIND ALL</button></th>
+                                            </tr>
+                                        </thead>
+                            
+                                        <tbody>
+                                            <tr>
+                                                <td>JSS1</td>
+                                                <td>23</td>
+                                                <td>#4,000</td>
+                                                <td></td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>JSS1</td>
+                                                <td>23</td>
+                                                <td>#4,000</td>
+                                                <td><button class="btn">REMIND ALL</button></td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>JSS1</td>
+                                                <td>23</td>
+                                                <td>#4,000</td>
+                                                <td></td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>JSS1</td>
+                                                <td>23</td>
+                                                <td>#4,000</td>
+                                                <td><button class="btn">REMIND ALL</button></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>JSS1</td>
+                                                <td>23</td>
+                                                <td>#4,000</td>
+                                                <td></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>JSS1</td>
+                                                <td>23</td>
+                                                <td>#4,000</td>
+                                                <td><button class="btn">REMIND ALL</button></td>
+                                            </tr>
+                            
+                                        </tbody>
+                                    </table>
+                            
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="annoucements">
+                            <div class="header">
+                                <img src="./images/megaphone.png" /> annoucements
+                            </div>
+                            
+                            <div class="debtor_announcement_container card">
+                                <div class="debtor_announcement">
+                                    <div class="announcement">
+                                        <div class="header">
+                                            <span class="dot"></span>
+                                            <span class="header_title">Computer lab lockdown</span>    
+                                        </div>
+                                        <div class="body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum, 
+                                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore 
+                                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                                        </div>
+                                    </div>
+
+                                    <div class="announcement">
+                                        <div class="header">
+                                            <span class="header_title">Computer lab lockdown</span>
+                                        </div>
+                                        <div class="body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum,
+                                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore
+                                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                                        </div>
+                                    </div>
+
+                                    <div class="announcement">
+                                        <div class="header">
+                                            <span class="header_title">Computer lab lockdown</span>
+                                        </div>
+                                        <div class="body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum,
+                                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore
+                                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                                        </div>
+                                    </div>
+
+                                    <div class="announcement">
+                                        <div class="header">
+                                            <span class="header_title">Computer lab lockdown</span>
+                                        </div>
+                                        <div class="body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum,
+                                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore
+                                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                                        </div>
+                                    </div>
+
+
+                                    <div class="announcement">
+                                        <div class="header">
+                                            <span class="header_title">Computer lab lockdown</span>
+                                        </div>
+                                        <div class="body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum,
+                                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore
+                                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                                        </div>
+                                    </div>
+
+
+                                    <div class="announcement">
+                                        <div class="header">
+                                            <span class="header_title">Computer lab lockdown</span>
+                                        </div>
+                                        <div class="body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum,
+                                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore
+                                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent_transactions hidden-xs hidden-sm">
+                        <div class="header">
+                            <img src="./images/buy.png" /> recent transactions
+                        </div>
+
+                        <div class="recent_transaction_container card">
+                            <div class="recent_transaction">
+                                <table class="table app-table">
+                                    <thead>
+                                        <tr>
+                                            <th>BASIC INFO</th>
+                                            <th>NOTE</th>
+                                            <th>ENTERED BY</th>
+                                            <th>AMOUNT</th>
+                                        </tr>
+                                    </thead>
+                            
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <div>Plumbing</div>
+                                                <div>#2356</div>
+                                            </td>
+                                            <td>materials & labour</td>
+                                            <td>Akin Osa</td>
+                                            <td>
+                                                <div>+ 4345</div>
+                                                <div>24/08/2018</div>
+                                            </td>
+                                        </tr>
+                            
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent_transaction--mobile hidden-md">
+                    <div class="header">
+                        <img src="./images/buy.png" /> recent transactions
+                    </div>
+                
+                    <div class="mobile-table transaction card">
+                        <div class="header">
+                            <div class="title">Plumbing</div>
+                            <div class="price">#2356</div>
+                            <div class="description">materials & labour</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content success">
+                            <div class="title">+ #4500</div>
+                            <div class="date">24/08/2018</div>
+                        </div>
+                    </div>
+                
+                    <div class="mobile-table transaction card">
+                        <div class="header">
+                            <div class="title">Plumbing</div>
+                            <div class="price">#2356</div>
+                            <div class="description">materials & labour</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content success">
+                            <div class="title">+ #4500</div>
+                            <div class="date">24/08/2018</div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-table transaction card">
+                        <div class="header">
+                            <div class="title">Plumbing</div>
+                            <div class="price">#2356</div>
+                            <div class="description">materials & labour</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content failed">
+                            <div class="title">- #4500</div>
+                            <div class="date">24/08/2018</div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-table transaction card">
+                        <div class="header">
+                            <div class="title">Plumbing</div>
+                            <div class="price">#2356</div>
+                            <div class="description">materials & labour</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content failed">
+                            <div class="title">- #4500</div>
+                            <div class="date">24/08/2018</div>
+                        </div>
+                    </div>
+
+                    <a href="" class="more">VIEW ALL</a>
+                </div>
+
+                <div class="debtors--mobile hidden-md">
+
+                    <div class="header">
+                        <div class="performace">
+                            <img src="./images/analysis.png" /> debtors
+                        </div>
+                        <button class="btn">Remind All</button>
+                    </div>
+
+                    <div class="mobile-table debtors card">
+                        <div class="header">
+                            <div class="title">JSS1</div>
+                            <div class="failed">23 debtors</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">#4,500</div>
+                            <a class="more">SEND REMINDER</a>
+                        </div>
+                    </div>
+                
+                    <div class="mobile-table debtors card">
+                        <div class="header">
+                            <div class="title">JSS2</div>
+                            <div class="failed">11 debtors</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">#4,500</div>
+                            <a class="more">SEND REMINDER</a>
+                        </div>
+                    </div>
+                
+                    <div class="mobile-table debtors card">
+                        <div class="header">
+                            <div class="title">JSS3</div>
+                            <div class="failed">56 debtors</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">#4,500</div>
+                            <a class="more">SEND REMINDER</a>
+                        </div>
+                    </div>
+                
+                
+                    <a href="" class="more">VIEW ALL</a>
+                </div>
+
+                <div class="announcement--mobile hidden-md">
+                    <div class="header">
+                        <img src="./images/megaphone.png" /> annoucements
+                    </div>
+                
+                    <div class="announcement card">
+                        <div class="header">
+                            <span class="dot"></span>
+                            <span class="header_title">Computer lab lockdown</span>
+                        </div>
+                        <div class="body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum,
+                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore
+                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                        </div>
+                    </div>
+                
+                    <div class="announcement card">
+                        <div class="header">
+                            <span class="header_title">Computer lab lockdown</span>
+                        </div>
+                        <div class="body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum,
+                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore
+                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                        </div>
+                    </div>
+
+                    <div class="announcement card">
+                        <div class="header">
+                            <span class="header_title">Computer lab lockdown</span>
+                        </div>
+                        <div class="body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum,
+                            unde voluptate vero fugiat hic doloribus expedita eveniet sed quasi tempore
+                            dolorem non cum nesciunt adipisci atque neque dolorum architecto!
+                        </div>
+                    </div>
+                
+                    <a href="" class="more">VIEW ALL</a>
+                </div>
+
+            </section>
+
+            <section class="assestments">
+                <div class="header">
+                    <div class="performace">
+                        <img src="./images/newspaper.png" /> assestments
+                    </div>
+                    <a class="more hidden-xs hidden-xs">View all</a>
+                </div>
+
+                <div class="assestments_web card hidden-xs hidden-xs">
+                    <table class="table app-table">
+                        <thead>
+                            <tr>
+                                <th>SUBMISSION TITLE</th>
+                                <th>STUDENT</th>
+                                <th>SCORED BY</th>
+                                <th>DATE CREATED</th>
+                                <th>MARK GIVEN</th>
+                                <th>COURSE</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>
+                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+                            <tr>
+                                <td>Lessons on Deforestation</td>
+                                <td>Damien Mathews</td>
+                                <td>Annie Anderson</td>
+                                <td>05-04-2018</td>
+                                <td>75/100</td>
+                                <td>Biology</td>
+                            </tr>                
+        
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="assestments_mobile hidden-md">
+                    <div class="mobile-table assestment card">
+                        <div class="header">
+                            <div class="title">Damien Mathews</div>
+                            <div class="">JSS1 A</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">Biology</div>
+                            <div class="more">75/100</div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-table assestment card">
+                        <div class="header">
+                            <div class="title">Damien Mathews</div>
+                            <div class="">JSS1 A</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">Biology</div>
+                            <div class="">75/100</div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-table assestment card">
+                        <div class="header">
+                            <div class="title">Damien Mathews</div>
+                            <div class="">JSS1 A</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">Biology</div>
+                            <div class="">75/100</div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-table assestment card">
+                        <div class="header">
+                            <div class="title">Damien Mathews</div>
+                            <div class="">JSS1 A</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">Biology</div>
+                            <div class="">75/100</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mobile-table assestment card">
+                        <div class="header">
+                            <div class="title">Damien Mathews</div>
+                            <div class="">JSS1 A</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">Biology</div>
+                            <div class="">75/100</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mobile-table assestment card">
+                        <div class="header">
+                            <div class="title">Damien Mathews</div>
+                            <div class="">JSS1 A</div>
+                        </div>
+                        <div class="v1"></div>
+                        <div class="content">
+                            <div class="title">Biology</div>
+                            <div class="">75/100</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>      
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script>
+        const ctx = document.getElementById("myChart").getContext('2d');
+        let chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Apr 01', 'Apr 02', 'Apr 03', 'Apr 04', 'Apr 05', 'Apr 06', 'Apr 07', 'Apr 08'],
+                datasets: [{
+                    data: [26, 36, 70, 67, 50, 63, 40, 60],
+                    label: "Some information",
+                    borderColor: "#1B75BB",
+                    fill: false
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                }
+            }
+        }); 
+
+        const settings = document.getElementById('settings');
+        const toogleSetting = () => {
+            if (settings.classList.contains('show')) {
+                settings.classList.remove('show');
+                settings.classList.add('hide');
+            } else {
+                settings.classList.remove('hide');
+                settings.classList.add('show');
+            }
+        }
+
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = () => {
+            mobileMenu.classList.remove('show');
+            mobileMenu.classList.add('hide');
+        }
+
+        const openMobileMenu = () => {
+            mobileMenu.classList.remove('hide');
+            mobileMenu.classList.add('show');
+        }
+
+        const schoolProfileWeb = document.getElementById('school_profile--web');
+        const openWebSchoolProfile = () => {
+            schoolProfileWeb.classList.remove('hide');
+            schoolProfileWeb.classList.add('show');
+        }
+
+        const closeWebSchoolProfile = () => {
+            schoolProfileWeb.classList.remove('show');
+            schoolProfileWeb.classList.add('hide');
+        }
+        
+    </script>
+</body>
+</html>

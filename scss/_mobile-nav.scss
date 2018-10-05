@@ -1,0 +1,149 @@
+.mobile-nav {
+    /** Overlay */
+    overflow-y: scroll;
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    color: $white;
+    background: $color-gradient;
+
+    padding: 25px 25px;
+
+    .mobile-nav__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .profile {
+            display: flex;
+            align-items: center;
+
+            .image {
+                margin-right: 10px;
+            }
+            .name_email {
+                .name {
+                    font-weight: bold;
+                    line-height: 29px;
+                    font-size: 20px;
+                }
+                .email {
+                    font-style: italic;
+                    font-size: em(13px);
+                }
+            }
+        } 
+    }
+}
+
+
+.nav_items{
+
+    overflow-y: scroll;
+    margin-top: 25px;
+    height: 700px; 
+
+    .nav_item {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+
+        .fa {
+            font-size: em(28px);
+            margin-bottom: 18px;
+        }
+
+        .nav_item--name {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            line-height: 33px;
+            font-weight: bolder;
+            text-align: left;
+            color: $white;
+            cursor: pointer;
+        }
+        .nav_item--name:hover {
+            text-decoration: none;
+        }
+        .nav_item--icon {
+            margin: 15px 0;
+        }
+        .dashboard.nav_item--icon {
+            margin-right: 25px;
+        }   
+        .student.nav_item--icon {
+            margin-right: 30px;
+        }   
+        .employee.nav_item--icon {
+            margin-right: 24px;
+        }   
+        .guardian.nav_item--icon {
+            margin-right: 24px;
+        }   
+        .attendance.nav_item--icon {
+            margin-right: 32px;
+        }   
+        .finance.nav_item--icon {
+            margin-right: 32px;
+        }   
+        .subject.nav_item--icon {
+            margin-right: 25px;
+        }   
+        .batch.nav_item--icon {
+            margin-right: 25px;
+        }   
+        .report_card.nav_item--icon {
+            margin-right: 32px;
+        }   
+        .sms.nav_item--icon {
+            margin-right: 25px;
+        }   
+        .event.nav_item--icon {
+            margin-right: 25px;
+        }   
+
+    }
+
+}
+
+.help_terms_setting_nav {
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+    .setting {
+        margin-bottom: 25px;
+    }
+    .help_term_privacy {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        line-height: 22px;
+        font-size: 20px;
+    }
+    .help {
+        padding: 10px 25px;
+        background: $white;
+        color: #1C75BB;
+        border-radius: 20px;
+
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}

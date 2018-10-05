@@ -1,0 +1,38 @@
+.sidebar {
+    background: $color-gradient;
+    margin-top: -10px;
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .sidebar{
+        display: unset;
+        padding: 0 25px;
+
+        .nav_items{
+            overflow-y: unset !important;
+
+            .nav_item--name {
+                font-size: 18px !important;
+            }
+
+            .nav_item {
+                width: 100% !important;
+
+                .fa {
+                    color: $white;
+                }
+            }
+        }
+
+        .help_terms_setting_nav {
+            color: $white;
+        }
+
+        .help_term_privacy {
+            font-size: 14px !important;
+
+            margin-top: 25px;
+        }
+    }
+}

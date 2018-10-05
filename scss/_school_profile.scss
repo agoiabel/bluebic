@@ -1,0 +1,84 @@
+.school_profile {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    left: 6px;
+    width: 288px;
+
+    padding: 15px 15px;
+}
+.school_profile--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .school_profile--name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    span {
+        font-size: em(12px);
+        margin-left: 10px;
+        font-weight: bolder;
+    }
+}
+.chosen_school {
+    margin-top: 15px;
+
+    .btn {
+        padding: 15px 10px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+}
+.school_profile--body,
+.school_owner_profile {
+    margin-top: 15px;
+}
+.school_profile--body {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 10px 10px 25px 10px;
+}
+.other_school--name {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    font-family: Khula Bold;
+}
+.sign_in {
+    font-size: em(12px);
+}
+.school_owner_profile--email {
+    font-size: em(14px);
+    color: #3B3B3B;
+    font-family: Khula Bold;
+}
+
+.school_profile--setting_logout {
+    padding-top: 30px;
+}
+.school_profile--setting {
+    padding-bottom: 25px;
+
+    .fa,
+    .glyphicon {
+        margin-right: 10px;
+    }
+}
+.setting_logout {
+    color: $deep-blue;
+    font-family: 'Khula Bold';
+}
+@media (max-width: 1000px) {
+    .school_profile {
+        position: absolute;
+        z-index: 2;
+        top: -80px;
+        left: 6px;
+        width: 100% !important;
+
+        padding: 15px 15px;
+    }
+}

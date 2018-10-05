@@ -1,0 +1,169 @@
+.top_header {}
+.logo-container {
+    background: $white;
+    display: flex;
+    justify-content: space-between;
+    padding: em(15px) em(5px);
+}
+.logo-item {}
+.logo-item.name_and_image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo,
+    .name,
+    .glyphicon {
+        margin-right: em(15px);
+    }
+    .logo {
+        border: 1px solid #FAD961;
+        padding: 2px 2px;
+        border-radius: 50%;
+    }
+    .name {
+        font-weight: bold;
+        font-size: em(16px);
+        font-family: Khula;
+    }
+    .glyphicon {
+        color: $deep-blue;
+        font-size: em(12px);
+        margin-top: -5px;
+    }
+}
+.search_bar_user_profile_notification {
+    display: none;
+}
+
+.logo-item.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    margin-top: 3px;
+
+    .glyphicon {
+        margin-bottom: em(5px);
+        font-size: em(20px);
+    }
+    .title {
+        font-size: em(20px);
+    }
+}
+.profile_settings {
+    position: relative;
+}
+.settings {
+    padding: 10px 10px;
+    margin-top: 10px; 
+    position: absolute;
+    right: 0;
+    z-index: 3;
+
+    .setting.setting_profile {
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(189, 189, 189, 0.25); 
+    }
+    .logout {
+        padding-top: 10px;
+    }
+}
+.setting .btn {
+    font-size: em(12px);
+    border-radius: 3px;
+}
+.search_bar { position: relative; }
+.search_bar input { 
+    text-indent: 30px;
+    border: 1px solid rgba(189, 189, 189, 0.25);
+    box-shadow: 0px 2px 9px rgba(196, 196, 196, 0.11);
+    border-radius: 3px;
+    height: 38px;
+}
+.search_bar .fa-search { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  color: #DADADA;
+}
+@media (min-width: 1200px) {
+    .top_header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-container {
+        width: 18.3%;
+    }
+    .search_bar_user_profile_notification {
+        width: 80%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search_bar {
+        width: 72%;
+    }
+    .user_profile_notification {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .notification {
+        padding: 2px 5px;
+        position: relative;
+
+        .dot {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .user_profile,
+    .profile_picture_more {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .user_profile {
+    }
+    .profile_picture_more,
+    .profile_picture_more .glyphicon {
+        margin-left: 14px;
+    }
+    .profile_picture_more .glyphicon {
+        color: #90A4AE;
+        font-size: em(12px);
+        margin-right: em(10px);
+    }
+    .logo-item.menu{
+        display: none;
+    }
+    .name_email {
+        text-align: right;
+
+        .name {
+            line-height: 19px;
+            font-weight: bold;
+        }
+        .email {
+            font-style: italic;
+            font-size: em(12px);
+            font-family: Avenir Next;
+            color: #90A4AE;
+        }
+    }
+}
+
+
+
+// @media only screen and (min-width: 1000px) and (max-width: 1300px)  {
+//     .user_profile_notification {
+//         display: none;
+//     }
+// }

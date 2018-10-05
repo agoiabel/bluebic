@@ -1,0 +1,41 @@
+//=======================================================================
+// Global config
+//=======================================================================
+// $font-url-google        : 'https://fonts.googleapis.com/css?family=Khula';
+
+@font-face { 
+  font-family: 'Khula Bold';
+  src: url('../Khula/Khula-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'Khula Light';
+  src: url('../Khula/Khula-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'Khula Semibold';
+  src: url('../Khula/Khula-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font-family--primary   : 'Khula Light', sans-serif;
+//Descriptive Base Colors
+
+$white                  :  #FFFFFF;
+$black                  : #3B3B3B;
+$deep-blue              : #1B75BB;
+$light-blue             : #00ADEE;
+$color-gradient         : linear-gradient(159.54deg, #1B75BB 0%, #00ADEE 100%);
+$color-shadow           : rgba(0, 0, 0, 0.07);
+
+//Text
+$base__font-size        : 16px;
+$base__line             : 16px;
+

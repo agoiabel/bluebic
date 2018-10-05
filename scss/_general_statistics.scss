@@ -1,0 +1,72 @@
+@media (min-width: 1000px) {
+	.general_statistics {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.graph {
+		width: 66%;
+	}
+	.statistics {
+		width: 32%;
+		margin-bottom: em(25px);
+	}
+}
+.graph {
+	margin-bottom: em(25px);
+}
+.graph .body {
+	height: 339px;
+	min-height: 339px;
+	max-height: 339px;
+
+	padding: 15px 15px;
+	overflow: hidden;
+}
+a.more {
+	color: #1B75BB;
+	font-weight: bold;	
+}
+.report {
+    padding: 15px 10px 15px 15px;
+    margin-bottom: em(15px);
+    display: flex;
+	justify-content: space-between;
+
+	font-size: em(12px);
+
+	.summary {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+    .title {
+        color: #BDBDBD;
+        text-transform: uppercase;
+    }
+    .amount {
+		font-size: em(22px);
+		font-family: Khula Bold;
+	}
+	a {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.title,
+	.amount{
+		margin-bottom: 15px;
+	}
+	.result {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.amount {
+			margin-right: em(5px);
+			font-size: em(28px);
+		}
+		.glyphicon {
+			margin-top: em(-30px);
+		}
+	}
+}
